@@ -1,0 +1,32 @@
+
+weight = 41.5
+
+###### ground shipping ###########
+
+if weight <= 2:
+  cost_g = weight*1.50+20
+elif (weight > 2) & (weight <=6):
+  cost_g = weight*3.00+20
+elif (weight > 6) & (weight<= 10):
+  cost_g = weight*4.00+20
+else :
+  cost_g = weight*4.75+20
+
+######## premium shipping ##############
+
+cost_g_premium = 125.00
+
+########## drone shipping ##########
+
+if weight <= 2:
+  cost_d = weight*4.50
+elif (weight > 2) & (weight <=6):
+  cost_d = weight*9.00
+elif (weight > 6) & (weight<= 10):
+  cost_d = weight*12.00
+else :
+  cost_d = weight*14.25
+
+print("Cost of ground shipping is: $" + str(cost_g))
+print("Cost of ground premium shipping is: $" + str(cost_g_premium))
+print("Cost of drone shipping is: $" + str(cost_d))
